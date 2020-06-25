@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="content">
+  <view class="title">
+    <image class="icon" src="{{weathericon}}"></image>
+  </view>
+  <view class="today">
+      <!-- <image class="icon" src="../../images/sun.png"></image> -->
+      <view class="h1" >本地天气</view>
+      <view>城市：{{city}}</view>
+      <view>日期：{{day}}</view>
+      <view>天气：{{weather}}</view>
+      <view class="temp" >温度：{{temp}}℃</view>
+      <view>友情提示：{{tips}}</view>
+      <!-- <button  bindtap="getinfo">查询</button> -->
+       <!-- <button  bindtap="wx.getLocation">获取位置</button> -->
+       <view class="other">
+        <view class="input">
+          <input class="input1" placeholder="请输入城市" bindinput="getInput"></input>
+        </view>
+        <view class="search">
+          <button style="width:240rpx" class="search1"  bindtap="getothercity">搜索城市天气</button>
+        </view>
+       </view>
+      
+  </view>
+  <view class="othercity" >
+    <view>城市：{{ocity}}</view>
+    <view>天气：{{oweather}}</view>
+    <view>温度：{{otemp}}</view>
+    <view>友情提示：{{otips}}</view>
+  </view>
+  <view class="bottom">
+    <image class="image" src="../assets/bg1.png"></image>
+  </view>
+
+
+</view>
